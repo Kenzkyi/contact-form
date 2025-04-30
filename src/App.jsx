@@ -148,7 +148,7 @@ const App = () => {
         </header>
         <footer>
           <nav>
-          <div style={{border:all.checkbox ? 'none' : '1px solid hsl(186, 15%, 59%)'}} onClick={()=>setAll({...all,checkbox:true})}>
+          <div style={{border:all.checkbox ? 'none' : '1px solid hsl(186, 15%, 59%)'}} onClick={()=>setAll({...all,checkbox:!all.checkbox})}>
             {all.checkbox && <img src={checkIcon} />}
           </div>
           <p>I consent to being contacted by the team <span>*</span></p>

@@ -54,6 +54,18 @@
     font-size: 11px;
     color: gainsboro;
   }
+
+  @media screen and (max-width:1024px) {
+    width: 37%;
+  }
+
+  @media screen and (max-width:768px) {
+    width: 47%;
+  }
+
+  @media screen and (max-width:768px) {
+    width: 75%;
+  }
 }
 
 .app-holder{
@@ -157,7 +169,7 @@
     }
 
     nav{
-      height: 28px;
+      min-height: 28px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -288,5 +300,35 @@
   input:hover,textarea:hover,aside:hover{
     border-color: hsl(169, 82%, 27%);
     cursor: pointer;
+  }
+
+  @media screen and (max-width:1024px) {
+    width: 55%;
+  }
+
+  @media screen and (max-width:1024px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width:480px) {
+    width: 90%;
+
+    main{
+      
+        flex-direction: column;
+      article{
+        width: 100%;
+      }
+
+      nav{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+
+        aside{
+          width: 100%;
+        }
+      }
+    }
   }
 }

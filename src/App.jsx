@@ -86,6 +86,23 @@ const App = () => {
   if(showToast){
     setTimeout(() => {
       setShowToast(false)
+      setAll({
+        firstName: '',
+        lastName: '',
+        email: '',
+        general: false,
+        support: false,
+        message: '',
+        checkbox: false
+      })
+      setError({
+        firstName: 'This field is required',
+        lastName: 'This field is required',
+        email: 'Please enter a valid email address',
+        query: 'Please select a query type',
+        message: 'This field is required',
+        checkbox: 'to submit this form, please consent by the team'
+      })
     }, 3000);
   }
   },[all,showToast])

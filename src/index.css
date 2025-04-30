@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+.app{
+  min-height: 100dvh;
+  width: 100%;
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.app-toast{
+  height: 60px;
+  width: 27%;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: hsl(187, 24%, 22%);
+
+  nav{
+    height: 15px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    div{
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+
+      img{
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    h5{
+      color: white;
+      font-size: 15px;
+    }
+  }
+
+  p{
+    font-size: 11px;
+    color: gainsboro;
+  }
+}
+
+.app-holder{
+  min-height: 480px;
+  width: 45%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+
+  main{
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+
+    article{
+      height: 60px;
+      width: 49%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      label{
+        font-size: 10px;
+        display: flex;
+        gap: 5px;
+        font-weight: 500;
+        color: hsl(187, 24%, 22%);
+
+        span{
+          color: hsl(169, 82%, 27%);
+        }
+      }
+
+      input{
+        height: 28px;
+        width: 100%;
+        border: 1px solid hsl(186, 15%, 59%);
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      small{
+        font-size: 11px;
+        color: red;
+      }
+    }
+
+    section{
+      height: 60px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      label{
+        font-size: 10px;
+        display: flex;
+        gap: 5px;
+        font-weight: 500;
+        color: hsl(187, 24%, 22%);
+
+        span{
+          color: hsl(169, 82%, 27%);
+        }
+      }
+
+      input{
+        height: 28px;
+        width: 100%;
+        border: 1px solid hsl(186, 15%, 59%);
+        border-radius: 5px;
+        outline: none;
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      small{
+        font-size: 11px;
+        color: red;
+      }
+    }
+
+    label{
+      font-size: 10px;
+      display: flex;
+      gap: 5px;
+      font-weight: 500;
+      color: hsl(187, 24%, 22%);
+
+      span{
+        color: hsl(169, 82%, 27%);
+      }
+    }
+
+    nav{
+      height: 28px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      aside{
+        height: 28px;
+        width: 49%;
+        border: 1px solid hsl(186, 15%, 59%);
+        border-radius: 5px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-inline: 15px;
+        font-size: 12px;
+        cursor: pointer;
+
+        div{
+          height: 12px;
+          width: 12px;
+          border-radius: 100%;
+          border: 1px solid gainsboro;
+
+          img{
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    small{
+      font-size: 11px;
+      color: red;
+    }
+  }
+
+  header{
+    height: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+      label{
+        font-size: 10px;
+        display: flex;
+        gap: 5px;
+        font-weight: 500;
+        color: hsl(187, 24%, 22%);
+
+        span{
+          color: hsl(169, 82%, 27%);
+        }
+      }
+
+      textarea{
+        max-height: 50px;
+        min-height: 50px;
+        min-width: 100%;
+        max-width: 100%;
+        border: 1px solid hsl(186, 15%, 59%);
+        border-radius: 5px;
+        outline: none;
+        padding: 5px;
+        font-size: 12px;
+      }
+
+      small{
+        font-size: 11px;
+        color: red;
+      }
+  }
+
+  footer{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background: aqua; */
+
+    nav{
+      height: 20px;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+
+      div{
+        height: 12px;
+        width: 12px;
+        border: 1px solid hsl(186, 15%, 59%);
+        cursor: pointer;
+
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      p{
+        font-size: 10px;
+      }
+    }
+
+    small{
+      font-size: 11px;
+      color: red;
+    }
+  }
+
+  button{
+    height: 32px;
+    width: 100%;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  input:hover,textarea:hover,aside:hover{
+    border-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+  }
+}

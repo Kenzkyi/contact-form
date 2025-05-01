@@ -124,19 +124,19 @@ const App = () => {
         <main>
           <article>
             <label>First Name <span>*</span></label>
-            <input type="text" name='firstName' value={all.firstName} onChange={onchangeAll} />
+            <input style={{borderColor:showError && error.firstName ? 'red' : 'hsl(186, 15%, 59%)'}} type="text" name='firstName' value={all.firstName} onChange={onchangeAll} />
             {showError && <small>{error.firstName}</small>}
           </article>
           <article>
             <label>Last Name <span>*</span></label>
-            <input type="text" name='lastName' value={all.lastName} onChange={onchangeAll} />
+            <input style={{borderColor:showError && error.lastName ? 'red' : 'hsl(186, 15%, 59%)'}} type="text" name='lastName' value={all.lastName} onChange={onchangeAll} />
             {showError && <small>{error.lastName}</small>}
           </article>
         </main>
         <main>
           <section>
             <label>Email Address <span>*</span></label>
-            <input type="email" name='email' value={all.email} onChange={onchangeEmail}/>
+            <input style={{borderColor:showError && error.email ? 'red' : 'hsl(186, 15%, 59%)'}} type="email" name='email' value={all.email} onChange={onchangeEmail}/>
             {showError && <small>{error.email}</small>}
           </section>
         </main>
@@ -160,7 +160,7 @@ const App = () => {
         </main>
         <header>
           <label >Message <span>*</span></label>
-          <textarea name='message' value={all.message} onChange={onchangeAll}></textarea>
+          <textarea style={{borderColor:showError && error.message ? 'red' : 'hsl(186, 15%, 59%)'}} name='message' value={all.message} onChange={onchangeAll}></textarea>
           {showError && <small>{error.message}</small>}
         </header>
         <footer>
